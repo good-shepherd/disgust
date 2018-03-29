@@ -28,6 +28,13 @@ public class DisgustPic {
     @JoinColumn(name = "category_id")
     private PicCategory picCategory;
 
+    public DisgustPic(String fileName, String flilDir, int boardNumber) {
+        this.fileName = fileName;
+        this.flilDir = flilDir;
+        this.boardNumber = boardNumber;
+        this.dateCreated = new Date();
+    }
+
     public DisgustPic(String fileName, String flilDir, int boardNumber, PicCategory picCategory) {
         this.fileName = fileName;
         this.flilDir = flilDir;
