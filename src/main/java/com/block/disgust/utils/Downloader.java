@@ -2,7 +2,8 @@ package com.block.disgust.utils;
 
 import com.block.disgust.entities.DisgustPic;
 import com.block.disgust.repositories.DisgustPicRepository;
-import com.block.disgust.repositories.PicCategoryRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -15,6 +16,7 @@ import java.util.List;
 @Component
 public class Downloader {
 
+    private static final Logger logger = LoggerFactory.getLogger(Downloader.class);
     private final DisgustPicRepository disgustPicRepository;
     // private final PicCategoryRepository picCategoryRepository;
 
@@ -48,7 +50,7 @@ public class Downloader {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            System.out.println("No." + (i + 1) + ": " + picList.get(i)[0] + "." + picList.get(i)[1]);
+            logger.info("downloaded file: {}", ("No." + (i + 1) + " - " + picList.get(i)[0] + "." + picList.get(i)[1]));
         }
         return i;
     }
