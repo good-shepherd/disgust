@@ -17,4 +17,4 @@ target/
 *.ipr
 .idea/workspace.xml
 
-appplication.properties
+../../../src/main/resources/application.properties
