@@ -12,12 +12,12 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableScheduling
-public class DisgustApplication implements CommandLineRunner {
+public class DisgustApplication /*implements CommandLineRunner*/ {
     public static void main(String[] args) {
         SpringApplication.run(DisgustApplication.class, args);
     }
 
-    @Override
+    /*@Override
     public void run(String... args) throws Exception {
         String filePath = "/Users/augustine/crawlertest/1523378057.jpg";
         MultiValueMap<String, Object> bodyMap = new LinkedMultiValueMap<>();
@@ -31,5 +31,5 @@ public class DisgustApplication implements CommandLineRunner {
         ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, requestEntity, String.class);
         System.out.println("response status: " + response.getStatusCode());
         System.out.println("response body: " + response.getBody());
-    }
+    }*/
 }
