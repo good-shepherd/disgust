@@ -4,7 +4,6 @@ import com.block.disgust.entities.DisgustPic;
 import com.block.disgust.repositories.DisgustPicRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
@@ -20,7 +19,6 @@ public class Downloader {
     private final DisgustPicRepository disgustPicRepository;
     // private final PicCategoryRepository picCategoryRepository;
 
-    @Autowired
     public Downloader(DisgustPicRepository disgustPicRepository/*, PicCategoryRepository picCategoryRepository*/) {
         this.disgustPicRepository = disgustPicRepository;
         // this.picCategoryRepository = picCategoryRepository;

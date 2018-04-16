@@ -32,7 +32,7 @@ public class PreProcessor {
         map.put("Accept-Language", "en-US,en;q=0.9,fr;q=0.8,it;q=0.7,ja;q=0.6,ko;q=0.5");
         map.put("Cache-Control", "max-age=0");
         map.put("Upgrade-Insecure-Requests", "1");
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 2; i++) {
             Elements el = null;
             try {
                 el = Jsoup.connect(YAGAL_URL + i).headers(map).get().select(".tb");
@@ -53,13 +53,16 @@ public class PreProcessor {
                     String s = POST_URL.concat(bno);
                     Document doc = null;
                     try {
-                        doc = Jsoup.connect(s).headers(map).timeout(5000).get();
+                        doc = Jsoup.connect(s).headers(map).timeout(10000).get();
                     } catch (HttpStatusException e1) {
                         logger.info("the " + bno + "post has removed: --" + e1.getMessage() + "--");
+                        continue;
                     } catch (SocketTimeoutException e1) {
                         logger.info(e1.getMessage() + ": " + bno);
+                        continue;
                     } catch (IOException e1) {
                         e1.printStackTrace();
+                        continue;
                     }
 
                     Elements tdelements = null;

@@ -37,7 +37,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -58,7 +57,11 @@
 			<artifactId>jsoup</artifactId>
 			<version>1.11.2</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.elasticsearch.client</groupId>
+			<artifactId>elasticsearch-rest-high-level-client</artifactId>
+			<version>6.2.3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
