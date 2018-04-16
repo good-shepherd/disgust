@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="831b06cc-6b8b-4d29-9417-b8c14bcf1a14" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/block/disgust/controllers/PictureController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/block/disgust/restclients/ClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disgust.iml" beforeDir="false" afterPath="$PROJECT_DIR$/disgust.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/block/disgust/DisgustApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/block/disgust/DisgustApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/block/disgust/entities/DisgustPic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/block/disgust/entities/DisgustPic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/block/disgust/utils/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/block/disgust/utils/Crawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/block/disgust/utils/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/block/disgust/utils/Downloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/block/disgust/utils/PreProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/block/disgust/utils/PreProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,16 +50,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisgustApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DisgustApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/block/disgust/DisgustApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+            <state relative-caret-position="274">
+              <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#656#657#0" expanded="true" />
                 <element signature="e#725#726#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -95,7 +93,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/block/disgust/entities/Picture.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/block/disgust/entities/PicCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/block/disgust/repositories/PicCategoryRepository.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/block/disgust/repositories/DisgustPicRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/block/disgust/utils/ArrayComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/block/disgust/utils/ScheduledTasks.java" />
@@ -110,6 +107,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/block/disgust/restclients/TagResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/block/disgust/DisgustApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/block/disgust/restclients/ClientTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -156,57 +154,6 @@
               <item name="disgust" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disgust" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disgust" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disgust" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disgust" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="disgust" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disgust" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disgust" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="disgust" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disgust" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disgust" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="disgust" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disgust" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disgust" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="disgust" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disgust" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disgust" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="disgust" type="462c0819:PsiDirectoryNode" />
-              <item name="restclients" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="disgust" type="b2602c69:ProjectViewProjectNode" />
@@ -360,16 +307,15 @@
       <workItem from="1523135461814" duration="246000" />
       <workItem from="1523143104726" duration="1581000" />
       <workItem from="1523330646473" duration="943000" />
-      <workItem from="1523800741177" duration="17426000" />
+      <workItem from="1523800741177" duration="17710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106286000" />
+    <option name="totallyTimeSpent" value="106570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32845744" />
@@ -677,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/block/disgust/DisgustApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -744,13 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -822,13 +754,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/block/disgust/DisgustApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        <state relative-caret-position="274">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#656#657#0" expanded="true" />
             <element signature="e#725#726#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
