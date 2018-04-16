@@ -1,5 +1,6 @@
 package com.block.disgust;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,6 +14,10 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableScheduling
 public class DisgustApplication implements CommandLineRunner {
+
+    @Value("${app.kakaokey}")
+    private String appKey;
+
     public static void main(String[] args) {
         SpringApplication.run(DisgustApplication.class, args);
     }
@@ -24,7 +29,7 @@ public class DisgustApplication implements CommandLineRunner {
         bodyMap.add("file", new FileSystemResource(filePath));
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.MULTIPART_FORM_DATA);
-        headers.set("Authorization", "KakaoAK apikey");
+        headers.set("Authorization", "KakaoAK " + appKey);
         HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(bodyMap, headers);
         String url = "https://kapi.kakao.com/v1/vision/multitag/generate";
         RestTemplate restTemplate = new RestTemplate();
