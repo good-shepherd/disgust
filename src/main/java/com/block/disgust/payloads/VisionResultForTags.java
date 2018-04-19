@@ -9,4 +9,7 @@ import java.util.List;
 public class VisionResultForTags {
     public List<String> labelEn = new ArrayList<>();
     public List<String> labelKr = new ArrayList<>();
+    public float normal;
+    public float soft;
+    public float adult;
 }
