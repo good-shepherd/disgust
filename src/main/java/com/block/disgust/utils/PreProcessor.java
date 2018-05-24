@@ -17,7 +17,7 @@ import java.util.*;
 public class PreProcessor {
 
     private static final Logger logger = LoggerFactory.getLogger(PreProcessor.class);
-    private static final String YAGAL_URL = "http://gall.dcinside.com/board/lists/?id=tree&page=";
+    private static final String GAL_URL = "http://gall.dcinside.com/board/lists/?id=tree&page=";
     private static final String POST_URL = "http://gall.dcinside.com/board/view/?id=tree&no=";
 
     // picList.get(0)[0]: filename, [1]: file ext, [2]: file url, [3] board no
@@ -35,7 +35,7 @@ public class PreProcessor {
         for (int i = 1; i <= 2; i++) {
             Elements el = null;
             try {
-                el = Jsoup.connect(YAGAL_URL + i).headers(map).get().select(".tb");
+                el = Jsoup.connect(GAL_URL + i).headers(map).get().select(".tb");
             } catch (SocketTimeoutException e1) {
                 e1.printStackTrace();
             } catch (IOException e1) {
