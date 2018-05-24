@@ -53,6 +53,7 @@ public class DisgustApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        // repository.deleteAll();
         getObjectsFromVision().forEach(o -> System.out.println(o.toString()));
     }
 
@@ -68,7 +69,7 @@ public class DisgustApplication implements CommandLineRunner {
         headers.setContentType(MediaType.MULTIPART_FORM_DATA);
         headers.set("Authorization", "KakaoAK ".concat(appKey));
         MultiValueMap<String, Object> bodyMap;
-        RestTemplate restTemplate = new RestTemplateBuilder().setConnectTimeout(5000).setReadTimeout(10000).build();
+        RestTemplate restTemplate = new RestTemplateBuilder().setConnectTimeout(50000).setReadTimeout(100000).build();
         for (DisgustPic picture : picList) {
             bodyMap = new LinkedMultiValueMap<>();
             bodyMap.add("file", new FileSystemResource(filePath.concat(picture.getFileName())));
