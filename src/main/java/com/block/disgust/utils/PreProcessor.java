@@ -17,8 +17,8 @@ import java.util.*;
 public class PreProcessor {
 
     private static final Logger logger = LoggerFactory.getLogger(PreProcessor.class);
-    private static final String GAL_URL = "http://gall.dcinside.com/board/lists/?id=tree&page=";
-    private static final String POST_URL = "http://gall.dcinside.com/board/view/?id=tree&no=";
+    private static final String GAL_URL = "http://gall.dcinside.com/board/lists/?id=baseball_new7&page=";
+    private static final String POST_URL = "http://gall.dcinside.com/board/view/?id=baseball_new7&no=";
 
     // picList.get(0)[0]: filename, [1]: file ext, [2]: file url, [3] board no
     public List<String[]> getPicList(int latestbno) {
@@ -66,8 +66,17 @@ public class PreProcessor {
                     }
 
                     Elements tdelements = null;
+                    Elements pelements = null;
                     try {
                         tdelements = doc.select(".icon_pic").select("a");
+                        pelements = doc.select(".s_write").select("td");
+                        System.out.println();
+                        System.out.println("========================================================");
+                        // System.out.println("element: " + pelements.toString().replaceAll("<(/)?([a-zA-Z]*)(\\s[a-zA-Z]*=[^>]*)?(\\s)*(/)?>", ""));
+                        // System.out.println("element: " + Jsoup.parse(pelements.toString()).text());
+                        System.out.println(pelements.text());
+                        System.out.println("========================================================");
+                        System.out.println();
                     } catch (NullPointerException n) {
                         n.printStackTrace();
                         continue;

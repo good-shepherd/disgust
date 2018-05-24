@@ -53,8 +53,8 @@ public class DisgustApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // repository.deleteAll();
-        getObjectsFromVision().forEach(o -> System.out.println(o.toString()));
+        repository.deleteAll();
+        //getObjectsFromVision().forEach(o -> System.out.println(o.toString()));
     }
 
     private List<VisionResultForTags> getObjectsFromVision() throws IOException {
