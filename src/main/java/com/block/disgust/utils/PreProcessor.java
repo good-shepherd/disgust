@@ -17,8 +17,8 @@ import java.util.*;
 public class PreProcessor {
 
     private static final Logger logger = LoggerFactory.getLogger(PreProcessor.class);
-    private static final String GAL_URL = "http://gall.dcinside.com/board/lists/?id=baseball_new7&page=";
-    private static final String POST_URL = "http://gall.dcinside.com/board/view/?id=baseball_new7&no=";
+    private static final String GAL_URL = "http://gall.dcinside.com/board/lists/?id=alcohol&page=";
+    private static final String POST_URL = "http://gall.dcinside.com/board/view/?id=alcohol&no=";
 
     // picList.get(0)[0]: filename, [1]: file ext, [2]: file url, [3] board no
     public List<String[]> getPicList(int latestbno) {

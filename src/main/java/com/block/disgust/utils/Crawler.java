@@ -24,7 +24,7 @@ public class Crawler {
         this.downloader = downloader;
     }
 
-    // @Scheduled(fixedDelay = 30000)
+    @Scheduled(fixedDelay = 30000)
     public void downloadNewPics() {
         Long start = System.currentTimeMillis();
         int tmp = latestbno;
